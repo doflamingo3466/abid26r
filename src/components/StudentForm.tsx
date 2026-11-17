@@ -14,7 +14,7 @@ type Props = {
 
 function StudentForm({ onRegister }: Props) {
   const [form, setForm] = useState<Student>({
-    name: "",
+    name: "abid",
     email: "",
     phone: "",
     course: "",
