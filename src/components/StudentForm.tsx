@@ -17,7 +17,7 @@ function StudentForm({ onRegister }: Props) {
     name: "",
     email: "",
     phone: "",
-    course: "CS",
+    course: "",
     gender: "",
   });
 
