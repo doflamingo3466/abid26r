@@ -18,7 +18,7 @@ function StudentForm({ onRegister }: Props) {
     email: "",
     phone: "",
     course: "",
-    gender: "male",
+    gender: "",
   });
 
   const [error, setError] = useState("");
