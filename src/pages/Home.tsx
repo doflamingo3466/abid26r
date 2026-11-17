@@ -41,7 +41,7 @@ function Home() {
             <div className="d-flex justify-content-between align-items-center mb-4">
               <div>
                 <h4>Students</h4>
-                <p className="subtitle mb-0">Registration records</p>
+                <p className="subtitle mb-0">Registratio records</p>
               </div>
 
               <span className="student-number">{students.length}</span>
