@@ -1,4 +1,3 @@
-
 import type { Student } from "./StudentForm";
 
 type Props = {

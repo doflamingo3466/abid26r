@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 
 export type Student = {
@@ -24,7 +23,9 @@ function StudentForm({ onRegister }: Props) {
 
   const [error, setError] = useState("");
 
-  function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) {
+  function handleChange(
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
+  ) {
     setForm({
       ...form,
       [e.target.name]: e.target.value,
@@ -34,7 +35,13 @@ function StudentForm({ onRegister }: Props) {
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
-    if (!form.name.trim() || !form.email.trim() || !form.phone.trim() || !form.course || !form.gender) {
+    if (
+      !form.name.trim() ||
+      !form.email.trim() ||
+      !form.phone.trim() ||
+      !form.course ||
+      !form.gender
+    ) {
       setError("Please fill in all fields.");
       return;
     }

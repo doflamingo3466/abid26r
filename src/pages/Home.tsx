@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import StudentForm from "../components/StudentForm";
 import StudentDetails from "../components/StudentDetails";
@@ -15,8 +14,10 @@ function Home() {
     <div className="container py-5">
       <div className="dashboard-header mb-4">
         <div>
-          <p className="small-label">STUDENT PORTAL / 2026</p>
-          <h1>Registration Desk<span>.</span></h1>
+          <p className="small-label">STUDENT PORTAL</p>
+          <h1>
+            Registration Desk<span>.</span>
+          </h1>
         </div>
 
         <div className="student-count">
@@ -43,9 +44,7 @@ function Home() {
                 <p className="subtitle mb-0">Registration records</p>
               </div>
 
-              <span className="student-number">
-                {students.length}
-              </span>
+              <span className="student-number">{students.length}</span>
             </div>
 
             <StudentDetails students={students} />
